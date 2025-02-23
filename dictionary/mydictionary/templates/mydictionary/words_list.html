@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>My dictionary</title>
+</head>
+<body>
+    <h1>Список слов</h1>
+    <table class="words_list" border="1">
+        <tr>
+            <th>Слово (оригинал)</th>
+            <th>Перевод</th>
+        </tr>
+        {% for w1, w2 in words %}
+        <tr>
+            <td>{{ w1 }}</td>
+            <td>{{ w2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><a href="{% url 'home' %}">Домой</a></p>
+</body>
+</html>
