@@ -9,5 +9,11 @@
           "src": "/(.*)",
           "dest": "dictionary/wsgi.py"
       }
+  ],
+  "rewrites": [
+    {
+      "source": "*/(.*)",
+      "destination": "/"
+    }
   ]
 }
