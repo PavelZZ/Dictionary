@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yaj4b%kx)574t@861s5c)s$0xp96_f=u*p*=exuapl90^-bth(
 DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app']
-
+STATIC_ROOT = BASE_DIR / "staticfiles" / "static"
 
 # Application definition
 
